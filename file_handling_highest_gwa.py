@@ -21,8 +21,9 @@ def slow_print(text):
         time.sleep(0.07)  # Adjust the sleep time for faster or slower printing
 
 def print_congratulations(highest_student):
+    message = f"🎉🎉🎉Congratulations, {highest_student}!🎉🎉🎉"
     slow_print("\033[1;33;40m")  # Set text color to yellow
-    slow_print(f"🎉🎉🎉Congratulations, {highest_student}!🎉🎉🎉")
+    slow_print(message.center(75))
     slow_print("\033[0;0m")  # Reset text color
     print()
     print()
@@ -49,7 +50,9 @@ print("="*80)
 print()
 #Display the output
 if highest_student:
-    print(f"The student with the highest GWA is {highest_student} with a GWA of {highest_gwa:.2f}")
+    result = f"The student with the highest GWA is {highest_student} with a GWA of {highest_gwa:.2f}"
+    print(result.center(80))
+
     print_congratulations(highest_student)
 else:
     print("No valid GWAs in the input file.")
