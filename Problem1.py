@@ -17,3 +17,5 @@ with open('even.txt', 'w') as even_file, open('odd.txt', 'w') as odd_file:
         else:
             # Write odd numbers to odd.txt
             odd_file.write(num + '\n')
+
+print("Files 'even.txt' and 'odd.txt' have been created successfully.")
