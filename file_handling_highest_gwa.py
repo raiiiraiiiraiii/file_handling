@@ -1,5 +1,10 @@
 #Pseudocode
 
+#Decided to add effects
+#Import
+
+#Add effect on Congratulating the highest student
+
 #Open the input file and read its content
 with open('students.txt', 'r') as my_file:
     lines = my_file.readlines()
