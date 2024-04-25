@@ -1,5 +1,8 @@
 #Add Pseudocode
 
+import time
+import sys
+
 #Create an empty list
 lines = []
 
@@ -20,6 +23,21 @@ while True:
 with open("mylife.txt", "w") as file:
     for line in lines:
         file.write(line + "\n")
+
+#Add effects
+def slow_print(text):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.07)  # Adjust the sleep time for faster or slower printing
+
+def print_end():
+    slow_print("\033[1;33;40m")  # Set text color to yellow
+    slow_print("Lines have been written to mylife.txt")
+    slow_print("\033[0;0m")  # Reset text color
+    print()
+    print()
+
 #End the program
-print("Lines have been written to mylife.txt\n")
+print_end()
 print('='*50)
