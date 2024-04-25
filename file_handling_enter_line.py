@@ -3,6 +3,7 @@
 #Create an empty list
 lines = []
 
+print('='*50, '\n')
 #Start an infinite loop
 while True:
     line = input("Enter line: ")
@@ -20,4 +21,5 @@ with open("mylife.txt", "w") as file:
     for line in lines:
         file.write(line + "\n")
 #End the program
-print("Lines have been written to mylife.txt")
+print("Lines have been written to mylife.txt\n")
+print('='*50)
