@@ -22,7 +22,7 @@ with (open('even.txt', 'w') as even_file,
             # Write odd numbers to odd.txt
             odd_file.write(num + '\n')
 
-#Add effect on Congratulating the highest student
+#Add effect
 def slow_print(text):
     for char in text:
         sys.stdout.write(char)
