@@ -20,4 +20,4 @@ with open("mylife.txt", "w") as file:
     for line in lines:
         file.write(line + "\n")
 #End the program
-print("Text contents have been written to mylife.txt")
+print("Lines have been written to mylife.txt")
